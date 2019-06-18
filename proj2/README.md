@@ -49,11 +49,11 @@ double taylor_log(double x, unsigned int n);
 ```
 kde n udává rozvoj polynomu (počet členů). Taylorův polynom pro funkci logaritmu implementujte podle vzorce:
 
-![alt text](https://wis.fit.vutbr.cz/FIT/st/cwk.php.cs?title=Projekt2&src=Taylor_log.png&ns=IZP&action=download&cache=no&csid=678740&id=12816)
+![Taylor_log](https://user-images.githubusercontent.com/47797196/59721542-e3817900-9221-11e9-950a-5a0b47f5888f.png)
 
 pro 0 < x < 2 a
 
-![alt text](https://wis.fit.vutbr.cz/FIT/st/cwk.php.cs?title=Projekt2&src=Taylor_log2.png&ns=IZP&action=download&cache=no&csid=678740&id=12816)
+![Taylor_log2](https://user-images.githubusercontent.com/47797196/59721562-eb411d80-9221-11e9-9c97-bd84d37c0b6c.png)
 
 pro x > 1/2. Doporučená mezní hodnota mezi těmito dvěma polynomy je 1.
 
@@ -66,7 +66,7 @@ double cfrac_log(double x, unsigned int n);
 ```
 kde n udává rozvoj zřetězeného zlomku (počet dělení ve zřetězeném zlomku). Funkci implementujte podle vzorce:
 
-![alt text](https://wis.fit.vutbr.cz/FIT/st/cwk.php.cs?title=Projekt2&src=Cf_log.png&ns=IZP&action=download&cache=no&csid=678740&id=12816)
+![Cf_log](https://user-images.githubusercontent.com/47797196/59721503-cba9f500-9221-11e9-8c4d-6b2812022d6f.png)
 
 #### 3. podúkol - Výpočet exponenciální funkce s obecným základem
 
@@ -80,7 +80,7 @@ double taylorcf_pow(double x, double y, unsigned int n);
 ```
 kde n udává rozvoj polynomu (počet členů) a parametry x a y odpovídají parametrům funkce pow z matematické knihovny. Taylorův polynom pro exponenciální funkci implementujte podle vzorce:
 
-![alt text](https://wis.fit.vutbr.cz/FIT/st/cwk.php.cs?title=Projekt2&src=Taylor_pow.png&ns=IZP&action=download&cache=no&csid=678740&id=12816)
+![Taylor_pow](https://user-images.githubusercontent.com/47797196/59721624-00b64780-9222-11e9-9658-c328e15cc554.png)
 
 pro a > 0.
 
