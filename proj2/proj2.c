@@ -2,8 +2,8 @@
  * @file proj2.c
  * @brief Project 2 - Iterative calculations
  * Program is divided into 2 parts:
- *				1.part counts logarithm from any number
- *				2.part counts exponential function
+ * 			1.part counts logarithm from any number
+ * 			2.part counts exponential function
  * @author Peter Koprda
  * @date November 2018
  */
@@ -189,7 +189,10 @@ int main(int argc,char *argv[])
 	if(argc < 4 || argc > 5)
 	/* number of arguments is wrong */
 	{
-		fprintf(stderr,"ERROR! Wrong number of arguments!\n");
+		fprintf(stderr,"ERROR! Wrong number of arguments!\n"
+		"Usage: ./proj2 --log X N \n"
+		"       ./proj2 --pow X Y N\n"
+		"Arguments X,Y and N are numbers and N must be greater than 0!\n");
 		return EXIT_FAILURE;
 	}
 
@@ -207,7 +210,10 @@ int main(int argc,char *argv[])
 		if((sscanf(argv[2],"%lf",&x)==0) || sscanf(argv[3],"%d",&n) == 0|| n <= 0)
 		/** argument error handling **/
 		{
-			fprintf(stderr,"ERROR! Wrong argument!\n");
+			fprintf(stderr,"ERROR! Wrong argument!\n"
+			"Usage: ./proj2 --log X N \n"
+			"       ./proj2 --pow X Y N\n"
+			"Arguments X,Y and N are numbers and N must be greater than 0!\n");
 			return EXIT_FAILURE;
 		}
 
@@ -257,7 +263,10 @@ int main(int argc,char *argv[])
 		if(sscanf(argv[2],"%lf",&x)==0 || sscanf(argv[3],"%lf",&y)==0 || sscanf(argv[4],"%d",&n)==0 || n<=0)
 		/* argument error handling */
 		{
-			fprintf(stderr,"ERROR! Wrong argument!\n");
+			fprintf(stderr,"ERROR! Wrong argument!\n"
+			"Usage: ./proj2 --log X N \n"
+			"       ./proj2 --pow X Y N\n"
+			"Arguments X,Y and N are numbers and N must be greater than 0!\n");
 			return EXIT_FAILURE;
 		}
 
@@ -271,8 +280,12 @@ int main(int argc,char *argv[])
 
 	else
 	{
-		fprintf(stderr,"ERROR! Wrong number of arguments!\n");
+		fprintf(stderr,"ERROR! Wrong number of arguments or wrong argument!\n"
+		"Usage: ./proj2 --log X N \n"
+		"       ./proj2 --pow X Y N\n"
+		"Arguments X,Y and N are numbers and N must be greater than 0!\n");
 		return EXIT_FAILURE;
 	}
+	
 	return EXIT_SUCCESS;
 }
